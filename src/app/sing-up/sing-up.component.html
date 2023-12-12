@@ -1,0 +1,50 @@
+
+<div class="singup-container">
+    <div [formGroup]="singupForm" class="singup-content" >
+        <p class="title">Sing-UP</p>
+        <mat-form-field appearance="outline">
+            <mat-label >Email</mat-label>
+            <input formControlName="username" matInput type="text">
+            <mat-error *ngIf="singupForm.controls['username'].hasError('required')">
+                Username is required
+            </mat-error>
+            <mat-error *ngIf="singupForm.controls['username'].hasError('required')">
+                invalid email
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label >Phone Number</mat-label>
+            <input formControlName="username" matInput type="text">
+            <mat-error *ngIf="singupForm.controls['username'].hasError('required')">
+                Phone Number is required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+
+            <mat-label>Password</mat-label>
+            <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+            <mat-icon (click)="hide = !hide"matTextSuffix>{{ hide ? 'visibility_off' :'visibility'}}</mat-icon>
+            <mat-error *ngIf="singupForm.controls['password'].hasError('required')">
+                password is required
+            </mat-error>
+
+        </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label> Confirme Password</mat-label>
+        <input formControlName="password" matInput [type]="hideConfirmePassword ? 'password' : 'text'">
+        <mat-icon (click)="hide = !hide"matTextSuffix>{{ hideConfirmePassword ? 'visibility_off' :'visibility'}}</mat-icon>
+        <mat-error *ngIf="singupForm.controls['password'].hasError('required')">
+             Confirme password is required
+            </mat-error>
+
+    </mat-form-field>
+        <p class="alternative">Don't have and account ?<span [routerLink]="['/Login']">Login</span></p>
+        <button class="btn">Login</button>
+        <div class="or">
+            <p>or</p>
+        </div>
+        <div class="goo">
+            <app-google-login></app-google-login>
+        </div>
+    </div>
+</div>

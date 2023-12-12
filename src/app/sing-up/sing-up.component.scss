@@ -1,0 +1,79 @@
+    
+.singup-container{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url('/arr.jpg') ;
+    .title{
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 16px;
+
+
+    }
+    .titlee{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .pass{
+        font-size: 16px;
+        color: #0152d5;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+
+    }
+    .alternative{
+        font-weight: 500;
+        text-align: center;
+        margin-top: 40px;
+        span{
+            color:#0152d5;
+            cursor: pointer;
+        }
+    }
+    .or{
+        border-top: 1px solid rgba(0,0,0,5) ;
+        position: relative;
+        margin-top: 40px;
+        p{
+            position: absolute;
+            background: white;
+            width: 50px;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            left: 50%;
+
+        }
+
+    }
+    .goo{
+        margin-top: 24px;
+    }
+    .singup-content{
+        width: 60%;
+        display: flex;
+       flex-direction: column;
+    
+
+    }
+    .btn{
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background:#0152d5 ;
+        color: blanchedalmond;
+    }
+    background-image: url(pi.webp);
+}

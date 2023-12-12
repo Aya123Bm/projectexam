@@ -1,0 +1,18 @@
+.goo-container{
+    padding: 16px 11px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border:1px solid rgba(0,0,0,5);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:cadetblue;
+    
+    img{
+        position: absolute;
+        left: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
